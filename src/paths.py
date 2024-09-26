@@ -18,4 +18,4 @@ if not Path(RAW_DATA_DIR).exists():
     os.mkdir(RAW_DATA_DIR)
     
 if not Path(TRANSFORMED_DATA_DIR).exists():
-    os.makedir(TRANSFORMED_DATA_DIR)
+    os.mkdir(TRANSFORMED_DATA_DIR)
