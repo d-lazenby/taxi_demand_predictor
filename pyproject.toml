@@ -6,14 +6,18 @@ authors = ["Doug <douglazenby@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "~3.9"
 jupyter = "^1.1.1"
 requests = "^2.32.3"
-pandas = "^2.2.2"
+numpy = "<2.0"
+pandas = "<2.1.0"
 pyarrow = "^17.0.0"
 tqdm = "^4.66.5"
 plotly = "^5.24.1"
-
+hsfs = { version = ">=3.4.0rc0,<3.5.0", extras = ["python"] }
+botocore = ">=1.31,<2.0"
+hopsworks = ">=3.4.0rc0,<3.5.0"
+python-dotenv = "^1.0.1"
 
 [build-system]
 requires = ["poetry-core"]
