@@ -14,10 +14,13 @@ pandas = "<2.1.0"
 pyarrow = "^17.0.0"
 tqdm = "^4.66.5"
 plotly = "^5.24.1"
-hsfs = { version = ">=3.4.0rc0,<3.5.0", extras = ["python"] }
+hsfs = { version = ">=3.7.0,<3.8.0", extras = ["python"] }
 botocore = ">=1.31,<2.0"
-hopsworks = ">=3.4.0rc0,<3.5.0"
+hopsworks = ">=3.7,<4.0"
 python-dotenv = "^1.0.1"
+scikit-learn = "^1.5.2"
+optuna = "^4.0.0"
+lightgbm = "^4.5.0"
 
 [build-system]
 requires = ["poetry-core"]
