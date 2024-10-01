@@ -28,6 +28,8 @@ class TemporalFeatureEngineer(BaseEstimator, TransformerMixin):
         
         X_ = X.copy()
         
+        X_['pickup_hour'] = pd.to_datetime(X_['pickup_hour'])
+        
         X_["hour"] = X_["pickup_hour"].dt.hour
         X_["day_of_week"] = X_["pickup_hour"].dt.dayofweek
         
