@@ -7,7 +7,7 @@ load_dotenv(PARENT_DIR / '.env')
 
 HOPSWORKS_PROJECT_NAME = 'taxi_demand_DL'
 try: 
-    HOPSWORKS_API_KEY = os.getenv('HOPSWORKS_API_KEY')
+    HOPSWORKS_API_KEY = os.environ('HOPSWORKS_API_KEY')
 except:
     raise Exception('Create a .env file on the project root with the HOPSWORKS_API_KEY')
 
